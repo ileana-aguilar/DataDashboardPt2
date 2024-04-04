@@ -1,0 +1,24 @@
+.list-component{
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: rgba(128, 0, 128, 0.169);
+    min-width: 700px;
+}
+
+input{
+    padding: 5px;
+    border-radius: 8px;
+    margin: 30px;
+}
+
+table{
+    border-spacing: 10px;
+    margin-left: 10px;
+    text-align: center;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+
+}
