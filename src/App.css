@@ -132,13 +132,10 @@
 }
 
 /* Navbar */
-.menu{
-  color: red;
-}
+
 
 .menu-item{
   align-items: flex-start;
-  color: #111111;
   flex: 0 0 auto;
   flex-direction: column;
   justify-content: flex-start;
@@ -148,6 +145,8 @@
   font-size: 1.5em;
   font-weight: 600;
 }
+
+
 
 @keyframes logo-spin {
   from {

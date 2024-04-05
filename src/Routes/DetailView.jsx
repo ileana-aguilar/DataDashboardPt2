@@ -6,11 +6,11 @@ import '../App.css';
 const DetailView = () => {
     return (
         <div className='app-container'>
-        <div className='left'>
+        <div className='sidebar'>
             <Header />
             <Navbar />
         </div>
-        <div className='right'>
+        <div className='main-content'>
             <BookDetail/>
         </div>
         </div>

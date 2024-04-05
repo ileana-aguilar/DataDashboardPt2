@@ -45,7 +45,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/bookdetails:bookKey" element={<DetailView />} />
+      <Route path="/bookdetails/works/:bookKey" element={<DetailView />} />
     </Routes>
 
     </BrowserRouter>

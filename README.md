@@ -1,104 +1,51 @@
-For books on table in <App/> (main page path '/')
+# Library Dashboard Part 2
+Library Dashboard Part 2 provides an at-a-glance summary of information gathered from a public API.
 
-https://openlibrary.org/trending/yearly.json
+Users will be able to view: 
+- a summary of statistics
+- a list view of the data that can be searched and filtered
+- data visualizations of data
+- a detail view containing more info related to a given data point
 
-json example:
+**The following **required** functionality is completed:**
 
+- [x] Clicking on an item in the list view displays more details about it
+
+- [x] Each detail view of an item has a direct, unique link to that item’s page
+
+- [x] The app includes at least two unique charts developed using the fetched data
+
+**The following **optional** functionality are implemented:**
+- [ ] The site’s customized dashboard contains more content that explains what is interesting about the data
+
+- [ ] The site allows users to toggle between different data visualizations
+
+# Here's how Data Dashboard Part 2 looks:
+
+<img src="src/assets/DashboardPt2.gif" title="Library DashboardPt2 gif" alt="DashboardPt2 gif">
+
+# Getting started
+**Install dependencies**
 ```
-{"query": "/trending/yearly", 
-    "works": [{"author_key": ["OL12780216A"], 
-                "author_name": ["Zana Kheiron"], 
-                "cover_i": 14321120, 
-                "edition_count": 15, 
-                "first_publish_year": 2019, 
-                "has_fulltext": false, 
-                "key": "/works/OL35351151W", 
-                "language": ["por"], 
-                "public_scan_b": false, 
-                "title": "Um casamento arranjado"},
-                
-                 {"author_key": ["OL7422948A"], 
-                    "author_name": ["James Clear"], 
-                    "cover_edition_key": "OL36647151M", 
-                    "cover_i": 12539702, 
-                    "edition_count": 41, 
-                    "first_publish_year": 2016, 
-                    "has_fulltext": true, 
-                    "ia": ["atomichabitseasy0000clea"], 
-                    "ia_collection_s": "internetarchivebooks;printdisabled", 
-                    "key": "/works/OL17930368W", 
-                    "language": ["spa", "eng", "tur", "ind", "por", "fre"], 
-                    "public_scan_b": false, 
-                    "title": "Atomic Habits", 
-                    "availability": {"status": "private", 
-                                        "available_to_browse": false,        "available_to_borrow": false, 
-                                        "available_to_waitlist": false, 
-                                        "is_printdisabled": true, 
-                                        "is_readable": false, 
-                                        "is_lendable": false, 
-                                        "is_previewable": true, 
-                                        "identifier": "atomichabitseasy0000clea", 
-                                        "isbn": "9781847941831", 
-                                        "oclc": null, 
-                                        "openlibrary_work": "OL17930368W", "openlibrary_edition": "OL27918581M", 
-                                        "last_loan_date": null, 
-                                        "num_waitlist": null, 
-                                        "last_waitlist_date": null, 
-                                        "is_restricted": true, 
-                                        "is_browseable": false, 
-                                        "__src__": "core.models.lending.get_availability"}},
-}
+npm install
 ```
 
-
-
-For book details info, https://openlibrary.org${bookkey}.json:
-
-json example:
+**Run the application in developer mode**
 
 ```
-bookkey = '/works/OL35351151W/'
-https://openlibrary.org/works/OL35351151W.json
-
-{"title": "Um casamento arranjado", 
-    "authors": [{"author": {"key": "/authors/OL12780216A"}, "type": {"key": "/type/author_role"}}], 
-    "key": "/works/OL35351151W", 
-    "type": {"key": "/type/work"}, 
-
-    "description": "Uma historia de uma familia falida q faz acordo com outra familia rica  e sua filha mais velha e cedida em troca. O filho da fam\u00edlia rica teve um acidente de avi\u00e3o que queimou 50% do seu corpo e casa c essa linda moca e se apaixonam", 
-    
-    "subjects": ["romance", "love"], 
-    "covers": [14321120, -1], 
-    "latest_revision": 5, 
-    "revision": 5, 
-    "created": {"type": "/type/datetime", 
-                "value": "2023-05-06T03:28:20.381165"}, 
-    "last_modified": {"type": "/type/datetime", 
-                        "value": "2023-08-30T20:13:08.577946"}}
-
+npm run dev
 ```
 
-
-
-
-
-
-For ratings info, https://openlibrary.org${bookkey}/ratings.json:
-
-json example:
+**Install navigation and chart functionality**
 
 ```
+npm install react-router-dom
 
-bookkey = '/works/OL35351151W/'
-
-https://openlibrary.org/works/OL35351151W/ratings.json
-
-{"summary": {"average": 4.127289377289378, 
-                "count": 1092, 
-                "sortable": 4.047196797555351}, 
-            "counts": {"1": 175, 
-                        "2": 27,
-                        "3": 43, 
-                        "4": 86, 
-                        "5": 761}}
+npm install recharts
 ```
+
+**Open project in the browser**
+
+In the command line Vite will display a link, such as http://127.0.0.1:5173 to click on or copy/paste that will take you to the localhost port where the project is running.
+
+**Tip:** If you'd like to stop the server, you can use ctrl + c or cmd + c within the Terminal, or use the trash can icon in the top right of the Terminal within VS Code. To run the server again, simply use npm run dev again.
