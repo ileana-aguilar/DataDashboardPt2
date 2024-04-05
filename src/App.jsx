@@ -6,7 +6,6 @@ import List from './Components/List'
 import Card from './Components/Card'
 import BookDetail from './Components/BookDetail'
 import { useRoutes } from "react-router-dom";
-import DetailView from './Routes/DetailView'
 import BookChart from './Components/BookChart'
 import BookChart2 from './Components/BookChart2'
 
