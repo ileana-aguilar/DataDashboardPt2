@@ -1,6 +1,4 @@
 #root {
-  
-  
   text-align: center;
 }
 
@@ -19,9 +17,7 @@
 
 .left, .right {
   display: flex;
-  flex-direction: column; 
-
-   
+  flex-direction: column;  
 }
 
 .left {
@@ -39,12 +35,9 @@
 }
 
 .right {
-  
   justify-content: flex-start; 
   width: 80%;
   padding-left: 300px;
-  
-  
 }
 
 .logo {

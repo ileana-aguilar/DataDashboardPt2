@@ -4,7 +4,6 @@ import Header from './Components/Header'
 import Navbar from './Components/Navbar'
 import List from './Components/List'
 import Card from './Components/Card'
-import BookDetail from './Components/BookDetail'
 import { useRoutes } from "react-router-dom";
 import BookChart from './Components/BookChart'
 import BookChart2 from './Components/BookChart2'
