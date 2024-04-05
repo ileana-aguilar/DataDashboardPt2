@@ -11,35 +11,6 @@ import BookDetail from './Components/BookDetail.jsx';
 import './App.css';
 import App from './App.jsx';
 
-function MainLayout() {
-  return (
-    <div className='app-container'>
-      <div className='left'>
-        <Header />
-        <Navbar />
-      </div>
-      <div className='right'>
-        <Card />
-        <List />
-      </div>
-    </div>
-  );
-}
-
-function BookDetailsLayout() {
-  return (
-    <div className='app-container'>
-      <div className='left'>
-        <Header />
-        <Navbar />
-      </div>
-      <div className='right'>
-        <DetailView />
-      </div>
-    </div>
-  );
-}
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>

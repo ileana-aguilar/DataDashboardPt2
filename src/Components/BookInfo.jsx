@@ -18,7 +18,6 @@ const BookInfo = ({ book }) => {
                 }
             }
         }
-
         fetchRating();
     }, [book]);
 
